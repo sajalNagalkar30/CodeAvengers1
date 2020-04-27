@@ -57,11 +57,20 @@
             android:textSize="15sp" />
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/mRecyclerView1"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="340dp"
-        tools:listitem="@layout/data_content" />
+        android:layout_height="346dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView1"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:orientation="vertical"
+            tools:listitem="@layout/data_content">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.core.widget.NestedScrollView>
 
 
 </LinearLayout>
